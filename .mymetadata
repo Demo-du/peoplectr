@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="peoplectr"
+  id="myeclipse.1501749559761"
+  context-root="/peoplectr"
+  j2ee-spec="6.0"
+  archive="peoplectr.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
