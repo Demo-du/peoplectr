@@ -1,5 +1,7 @@
 package org.djj.hrm.util.common;
-
+/*
+ * 常量
+ */
 public class HrmConstants {
     //数据表常量
 	public static final String USERTABLE="user_inf";
