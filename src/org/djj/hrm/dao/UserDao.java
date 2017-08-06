@@ -19,10 +19,10 @@ public interface UserDao {
 			@Param("loginname") String loginname,
 			@Param("password") String password);
 	//根据id查询
-	@Select("select * from"+USERTABLE+"where id=#{id}")
+	@Select("select * from"+USERTABLE+"where ID=#{id}")
 	User selectById(Integer id);
 	//根据id删除
-	@Delete("delete from "+USERTABLE+"where id=#{id}")
+	@Delete("delete from "+USERTABLE+"where ID=#{id}")
 	void deleteById(Integer id);
 	//动态修改用户
 	@SelectProvider(type=UserDynaSqlProvider.class,method="updateUser")
