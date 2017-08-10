@@ -13,7 +13,7 @@ public class HrmConstants {
 	//===========================================================//
 	public static final String LOGIN="loginForm";
 	//session
-	public static final String USERSESSION="user_session";
+	public static final String USER_SESSION="user_session";
 	//每页数据
 	public static int PAGE_DEFAULT_SIZE=4;
 }
