@@ -83,8 +83,8 @@
 	<div class="page-lock">
 		<div class="page-logo" style="margin-bottom: 2px">
 			<a class="brand" href="login.html"
-				style="font-size: 22px; color: #FFF;"> 南京航空航天大学人事管理<font color="#FFCC00">Hrm</font><span
-				style="font-size: 13px;">1.0</span> 系统
+				style="font-size: 22px; color: #FFF;"> 南京航空航天大学人事管理<font color="#FFCC00"></font><span
+				style="font-size: 13px;"></span> 系统
 			</a>
 		</div>
 		<form action="login" method="post" id="loginForm">
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 			<div class="page-footer" style="color: #fff">
-				兼容浏览器IE8+，最佳分辨率1280*800. <br>2015 @ 疯狂软件 http://www.fkit.org
+				 <br>2017 @ 杜健健 http://dujianjian.win
 			</div>
 		</form>
 	</div>

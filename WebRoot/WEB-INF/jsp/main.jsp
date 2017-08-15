@@ -14,10 +14,10 @@
 <link href="${ctx}/css/css.css" type="text/css" rel="stylesheet" />
 </head>
 <frameset rows="80,*" cols="*" frameborder="no" border="0" framespacing="0">
-  <frame src="/home/dujianjian/Workspaces/mulu/peoplectr/WebRoot/WEB-INF/jsp/top.jsp" name="title" scrolling="no" noresize="noresize" >
+  <frame src="${ctx}/top" name="title" scrolling="no" noresize="noresize" >
   <frameset cols="220,*" frameborder="no" border="0" framespacing="0">
-    <frame src="/home/dujianjian/Workspaces/mulu/peoplectr/WebRoot/WEB-INF/jsp/left.jsp" name="tree" scrolling="no" marginheight="0" marginwidth="0">
-    <frame src="/home/dujianjian/Workspaces/mulu/peoplectr/WebRoot/WEB-INF/jsp/right.jsp" name="main" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" noresize="noresize">
+    <frame src="${ctx}/left" name="tree" scrolling="no" marginheight="0" marginwidth="0">
+    <frame src="${ctx}/right" name="main" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" noresize="noresize">
   </frameset>
 </frameset>
 <body>
