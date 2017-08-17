@@ -5,7 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-	<title>人事管理系统 ——部门管理</title>
+
+	<title>人事管理系统 ——实验室管理</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta http-equiv="cache-control" content="no-cache" />
@@ -47,14 +48,15 @@
 	 		   /** 获取到用户选中的复选框  */
 	 		   var checkedBoxs = boxs.filter(":checked");
 	 		   if(checkedBoxs.length < 1){
-	 			   $.ligerDialog.error("请选择一个需要删除的部门！");
+	 		   
+	 			   $.ligerDialog.error("请选择一个需要删除的实验室！");
 	 		   }else{
 	 			   /** 得到用户选中的所有的需要删除的ids */
 	 			   var ids = checkedBoxs.map(function(){
 	 				   return this.value;
 	 			   })
 	 			   
-	 			   $.ligerDialog.confirm("确认要删除吗?","删除部门",function(r){
+	 			   $.ligerDialog.confirm("确认要删除吗?","删除实验室",function(r){
 	 				   if(r){
 	 					   // alert("删除："+ids.get());
 	 					   // 发送请求
@@ -72,7 +74,7 @@
 	  <tr><td height="10"></td></tr>
 	  <tr>
 	    <td width="15" height="32"><img src="${ctx}/images/main_locleft.gif" width="15" height="32"></td>
-		<td class="main_locbg font2"><img src="${ctx}/images/pointer.gif">&nbsp;&nbsp;&nbsp;当前位置：部门管理 &gt; 部门查询</td>
+		<td class="main_locbg font2"><img src="${ctx}/images/pointer.gif">&nbsp;&nbsp;&nbsp;当前位置：实验室管理 &gt; 实验室查询</td>
 		<td width="15" height="32"><img src="${ctx}/images/main_locright.gif" width="15" height="32"></td>
 	  </tr>
 	</table>
@@ -88,7 +90,7 @@
 				    <table width="100%" border="0" cellpadding="0" cellspacing="0">
 					  <tr>
 					    <td class="font3">
-					    	部门名称：<input type="text" name="name">
+					    	实验室名称：<input type="text" name="name">
 					    	 <input type="submit" value="搜索"/>
 					    	<input id="delete" type="button" value="删除"/>
 					    </td>
@@ -107,7 +109,8 @@
 		  <table width="100%" border="1" cellpadding="5" cellspacing="0" style="border:#c2c6cc 1px solid; border-collapse:collapse;">
 		    <tr class="main_trbg_tit" align="center">
 			  <td><input type="checkbox" name="checkAll" id="checkAll"></td>
-			  <td>部门名称</td>
+			  
+			  <td>实验室名称</td>
 			  <td>详细信息</td>
 			  <td align="center">操作</td>
 			</tr>

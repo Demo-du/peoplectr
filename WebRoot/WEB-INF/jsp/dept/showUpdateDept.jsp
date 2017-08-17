@@ -3,7 +3,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 	<head>
-	<title>人事管理系统——修改部门</title>
+	<title>人事管理系统——修改实验室</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta http-equiv="cache-control" content="no-cache" />
@@ -22,13 +22,15 @@
 	<link href="${ctx}/css/pager.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript">
 	 $(function(){
-	    	/** 部门表单提交 */
+	 
+	 
+	    	/** 实验室表单提交 */
 			$("#deptForm").submit(function(){
 				var name = $("#name");
 				var remark = $("#remark");
 				var msg = "";
 				if ($.trim(name.val()) == ""){
-					msg = "部门名称不能为空！";
+					msg = "实验室名称不能为空！";
 					name.focus();
 				}else if ($.trim(remark.val()) == ""){
 					msg = "详细描述不能为空！";
@@ -67,7 +69,7 @@
 		    <tr><td class="font3 fftd">
 		    	<table>
 		    		<tr>
-		    			<td class="font3 fftd">部门名称：<input type="text" name="name" id="name" size="20" value="${dept.name }"/></td>
+		    			<td class="font3 fftd">实验室名称：<input type="text" name="name" id="name" size="20" value="${dept.name }"/></td>
 		    			<td class="font3 fftd">详细描述：<input type="text" name="remark" id="remark" size="20" value="${dept.remark }"/></td>
 		    		</tr>
 		    			
