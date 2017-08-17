@@ -68,7 +68,7 @@
 		    	<table>
 		    		<tr>
 		    		
-		    			<td class="font3 fftd">实验室名称：<input type="text" name="name" id="name" size="20" value="${job.name }"/></td>
+		    			<td class="font3 fftd">职位名称：<input type="text" name="name" id="name" size="20" value="${job.name }"/></td>
 		    			<td class="font3 fftd">详细描述：<input type="text" name="remark" id="remark" size="20" value="${job.remark }"/></td>
 		    		</tr>
 		    			
