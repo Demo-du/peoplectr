@@ -212,9 +212,9 @@
 			<tr>
 				<td class="font3 fftd">
 					备&nbsp;&nbsp;&nbsp;&nbsp;注：<input name="remark" id="remark" size="40" value="${employee.remark }"/>
-					&nbsp;&nbsp;所属部门：
+					&nbsp;&nbsp;所属实验室：
 					<select  name="dept_id" style="width:100px;">
-						   <option value="0">--部门选择--</option>
+						   <option value="0">--实验室选择--</option>
 						   <c:forEach items="${requestScope.depts }" var="dept">
 						   		<c:choose>
 			    					<c:when test="${employee.dept.id == dept.id }">

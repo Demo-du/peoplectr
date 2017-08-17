@@ -5,7 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-	<title>人事管理系统 ——员工管理</title>
+
+	<title>人事管理系统 ——人员管理</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<meta http-equiv="cache-control" content="no-cache" />
@@ -109,8 +110,8 @@
 					    			<option value="2">女</option>
 					    		</select>
 					    	手机：<input type="text" name="phone">
-					    	所属部门：<select  name="dept_id" style="width:100px;">
-								   <option value="0">--部门选择--</option>
+					    	所属实验室：<select  name="dept_id" style="width:100px;">
+								   <option value="0">--实验室选择--</option>
 								   <c:forEach items="${requestScope.depts }" var="dept">
 					    				<option value="${dept.id }">${dept.name }</option>
 					    			</c:forEach>
