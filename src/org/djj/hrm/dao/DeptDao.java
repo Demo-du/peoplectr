@@ -19,6 +19,7 @@ public interface DeptDao {
 	@Select("select * from "+DEPTTABLE+" where ID=#{id}")//此处可能有问题
 	Dept selectById(int id);
 	//按照ID将部门删除
+	  //@Delete(" delete from "+DEPTTABLE+" where id = #{id} ")
 	@Delete("delete from "+DEPTTABLE+" where ID=#{id}")
 	void deleteById(Integer id);
 	//动态插入部门
